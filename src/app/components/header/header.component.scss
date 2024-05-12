@@ -1,0 +1,45 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Reset some default styles */
+body, h1, ul {
+    margin: 0;
+}
+
+.header {
+    background-color: #dddddd;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #c1c1c1;
+    h1 {
+        font-size: 24px;
+        a{
+            text-decoration: none;
+        }
+    }
+    ul {
+        list-style-type: none;
+        li {
+            display: inline;
+            margin-right: 20px;
+            &:last-child{
+                margin-right: 0;
+            }
+            a {
+                text-decoration: none;
+                font-size: 16px;
+            }
+            a.active{
+                font-weight: bold;
+            }
+        }
+    }
+    
+}
